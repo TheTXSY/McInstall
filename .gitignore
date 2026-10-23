@@ -1,0 +1,25 @@
+# ---- .NET build output ----
+bin/
+obj/
+dist/
+*.pdb
+
+# ---- local test data / tools ----
+test-mc/
+tools/ui-shots/
+tools/video/.deps/
+tools/video/frames/
+tools/video/work/
+crash.log
+McInstall.json
+
+# ---- IDE / OS ----
+.vs/
+.idea/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini
+
+# ---- internal notes (not part of the public repo) ----
+方案梳理.md
