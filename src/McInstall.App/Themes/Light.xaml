@@ -1,0 +1,102 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- 浅色主题：跟随时由 ThemeManager 换入，构图与深色完全一致 -->
+    <LinearGradientBrush x:Key="WindowBackground" StartPoint="0,0" EndPoint="0.8,1">
+        <GradientStop Color="#F1F4F9" Offset="0" />
+        <GradientStop Color="#E9EFF7" Offset="1" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="WindowSolid" Color="#F1F4F9" />
+    <SolidColorBrush x:Key="FooterBg" Color="#F1F4F9" />
+
+    <RadialGradientBrush x:Key="AmbientGlow1">
+        <GradientStop Color="#DCE8FF" Offset="0" />
+        <GradientStop Color="#00DCE8FF" Offset="1" />
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="AmbientGlow2">
+        <GradientStop Color="#EEE6FF" Offset="0" />
+        <GradientStop Color="#00EEE6FF" Offset="1" />
+    </RadialGradientBrush>
+
+    <SolidColorBrush x:Key="Surface" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="Surface2" Color="#F2F5FA" />
+    <SolidColorBrush x:Key="Surface3" Color="#EAF0F7" />
+    <SolidColorBrush x:Key="SurfaceHover" Color="#F4F7FC" />
+    <SolidColorBrush x:Key="ListHover" Color="#F7FAFF" />
+    <SolidColorBrush x:Key="ListSelected" Color="#EEF4FF" />
+
+    <SolidColorBrush x:Key="Border" Color="#E1E7F0" />
+    <SolidColorBrush x:Key="BorderStrong" Color="#D3DDEC" />
+    <SolidColorBrush x:Key="Line" Color="#E8EDF5" />
+    <SolidColorBrush x:Key="LineSoft" Color="#F0F4FA" />
+
+    <SolidColorBrush x:Key="Ink" Color="#0F172A" />
+    <SolidColorBrush x:Key="InkSoft" Color="#475467" />
+    <SolidColorBrush x:Key="Muted" Color="#667085" />
+    <SolidColorBrush x:Key="Faint" Color="#98A2B3" />
+    <SolidColorBrush x:Key="Placeholder" Color="#AEBACB" />
+
+    <SolidColorBrush x:Key="Accent" Color="#2F6BFF" />
+    <SolidColorBrush x:Key="Accent2" Color="#6D4AFF" />
+    <SolidColorBrush x:Key="AccentSoft" Color="#EAF1FF" />
+    <LinearGradientBrush x:Key="AccentGradient" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#5B8CFF" Offset="0" />
+        <GradientStop Color="#8B5CF6" Offset="1" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="OnAccent" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="StepDotIdle" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="StepDotBorder" Color="#D8E1EE" />
+    <SolidColorBrush x:Key="StepLine" Color="#E1E7F0" />
+
+    <SolidColorBrush x:Key="Track" Color="#E7EDF6" />
+    <SolidColorBrush x:Key="ScrollThumb" Color="#C6D2E4" />
+
+    <SolidColorBrush x:Key="InputBg" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="InputBorder" Color="#DFE7F2" />
+    <SolidColorBrush x:Key="Selection" Color="#C9D9FF" />
+    <SolidColorBrush x:Key="Knob" Color="#FFFFFF" />
+
+    <SolidColorBrush x:Key="GhostHoverBg" Color="#F4F8FF" />
+    <SolidColorBrush x:Key="GhostHoverBorder" Color="#C9D9FF" />
+    <SolidColorBrush x:Key="GhostPressedBg" Color="#EBF1FF" />
+    <SolidColorBrush x:Key="SwitchTrack" Color="#DCE3EE" />
+
+    <SolidColorBrush x:Key="PrimaryHover" Color="#6E9BFF" />
+    <SolidColorBrush x:Key="PrimaryPressed" Color="#4E7BE8" />
+    <SolidColorBrush x:Key="PrimaryDisabledBg" Color="#C9D6EE" />
+
+    <SolidColorBrush x:Key="Success" Color="#12B76A" />
+    <SolidColorBrush x:Key="SuccessText" Color="#047857" />
+    <SolidColorBrush x:Key="SuccessSoft" Color="#ECFDF3" />
+    <SolidColorBrush x:Key="SuccessBorder" Color="#BBF7D0" />
+
+    <SolidColorBrush x:Key="Warning" Color="#D97706" />
+    <SolidColorBrush x:Key="WarningText" Color="#B54708" />
+    <SolidColorBrush x:Key="WarningSoft" Color="#FFF8EC" />
+    <SolidColorBrush x:Key="WarningBorder" Color="#FDE6C8" />
+
+    <SolidColorBrush x:Key="Danger" Color="#D92D20" />
+    <SolidColorBrush x:Key="DangerText" Color="#B42318" />
+    <SolidColorBrush x:Key="DangerSoft" Color="#FFF5F4" />
+    <SolidColorBrush x:Key="DangerBorder" Color="#FCE4E2" />
+    <SolidColorBrush x:Key="DangerHover" Color="#FEEFED" />
+
+    <SolidColorBrush x:Key="StatusIdle" Color="#C3CDDD" />
+    <SolidColorBrush x:Key="CubeWatermark" Color="#DCE6F5" />
+
+    <!-- 日志保持深色控制台，两种主题一致 -->
+    <SolidColorBrush x:Key="LogBg" Color="#070A10" />
+    <SolidColorBrush x:Key="LogHeader" Color="#0A0E15" />
+    <SolidColorBrush x:Key="LogBorder" Color="#1B212B" />
+    <SolidColorBrush x:Key="LogText" Color="#8A94A6" />
+    <SolidColorBrush x:Key="LogMuted" Color="#4A5464" />
+
+    <SolidColorBrush x:Key="Scrim" Color="#99080A0F" />
+
+    <DropShadowEffect x:Key="CardShadow" Color="#1B2A4A" Opacity="0.10" BlurRadius="30"
+                      ShadowDepth="8" Direction="270" />
+    <DropShadowEffect x:Key="AccentGlow" Color="#2F6BFF" Opacity="0.22" BlurRadius="18"
+                      ShadowDepth="0" Direction="0" />
+    <DropShadowEffect x:Key="StepGlow" Color="#2F6BFF" Opacity="0.3" BlurRadius="14"
+                      ShadowDepth="0" Direction="0" />
+</ResourceDictionary>

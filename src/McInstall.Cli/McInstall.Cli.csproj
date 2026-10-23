@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>McInstall.Cli</RootNamespace>
+    <AssemblyName>McInstall.Cli</AssemblyName>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\McInstall.Core\McInstall.Core.csproj" />
+  </ItemGroup>
+
+</Project>
