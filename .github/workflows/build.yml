@@ -1,0 +1,43 @@
+name: build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Publish app
+        run: >
+          dotnet publish src/McInstall.App/McInstall.App.csproj
+          -c Release -r win-x64 --self-contained false
+          -p:PublishSingleFile=true -o dist
+
+      - name: Publish CLI
+        run: >
+          dotnet publish src/McInstall.Cli/McInstall.Cli.csproj
+          -c Release -r win-x64 --self-contained false
+          -p:PublishSingleFile=true -o dist/cli
+
+      - name: Remove symbols
+        shell: pwsh
+        run: Remove-Item dist/*.pdb, dist/cli/*.pdb -Force -ErrorAction SilentlyContinue
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: McInstall-win-x64
+          path: dist/
+          if-no-files-found: error
