@@ -1,0 +1,166 @@
+{
+  "mp4": {
+    "path": "docs/media/mcinstall-promo.mp4",
+    "duration_seconds": 53,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 1590,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "color_space": "bt709",
+    "color_range": "tv",
+    "audio": false,
+    "bytes": 11033846,
+    "faststart": true,
+    "top_level_atoms": [
+      {
+        "tag": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "tag": "moov",
+        "offset": 32,
+        "size": 19771
+      },
+      {
+        "tag": "free",
+        "offset": 19803,
+        "size": 8
+      },
+      {
+        "tag": "mdat",
+        "offset": 19811,
+        "size": 11014035
+      }
+    ]
+  },
+  "gif": {
+    "path": "docs/media/mcinstall-promo.gif",
+    "duration_seconds": 12,
+    "width": 960,
+    "height": 540,
+    "fps": 15,
+    "frames": 180,
+    "bytes": 7419255
+  },
+  "poster": {
+    "path": "docs/media/mcinstall-promo-poster.png",
+    "width": 1920,
+    "height": 1080,
+    "frame": 180,
+    "seconds": 6,
+    "bytes": 692090
+  },
+  "brand_image": {
+    "path": "docs/media/mcinstall-brand-promo.png",
+    "width": 1920,
+    "height": 1080,
+    "format": "PNG",
+    "title": "McInstall",
+    "subtitle": "专为还原、延续PCL2下载功能打造",
+    "bytes": 985744
+  },
+  "samples_from_final_mp4": [
+    {
+      "seconds": 2,
+      "frame": 60,
+      "luma_mean": 241.3
+    },
+    {
+      "seconds": 10.5,
+      "frame": 315,
+      "luma_mean": 143.325
+    },
+    {
+      "seconds": 17.5,
+      "frame": 525,
+      "luma_mean": 140.975
+    },
+    {
+      "seconds": 23.5,
+      "frame": 705,
+      "luma_mean": 142.344
+    },
+    {
+      "seconds": 29.5,
+      "frame": 885,
+      "luma_mean": 140.611
+    },
+    {
+      "seconds": 36,
+      "frame": 1080,
+      "luma_mean": 142.419
+    },
+    {
+      "seconds": 42,
+      "frame": 1260,
+      "luma_mean": 241.75
+    },
+    {
+      "seconds": 46.5,
+      "frame": 1395,
+      "luma_mean": 241.467
+    },
+    {
+      "seconds": 51,
+      "frame": 1530,
+      "luma_mean": 240.892
+    }
+  ],
+  "preservation": {
+    "original_files_checked": 9541,
+    "unchanged": 9540,
+    "changed": [
+      "README.md"
+    ],
+    "external_changes_preserved": [
+      "README.md"
+    ],
+    "note": "External README.md edit preserved; this task did not edit it. Other 9540 baseline files unchanged."
+  },
+  "visual_review": {
+    "passed": true,
+    "seconds": [
+      2,
+      10.5,
+      17.5,
+      23.5,
+      29.5,
+      36,
+      42,
+      46.5,
+      51
+    ],
+    "motion_seconds": [
+      5.2,
+      6,
+      7.55,
+      9.6,
+      11.8,
+      14.6,
+      44.3,
+      49.2,
+      52.8
+    ],
+    "findings": "Light-background MP4 and GIF reviewed at scene and transition samples. Dark gray promotional copy is legible and unclipped; motion preserved. Real UI crops remain unchanged. Brand graphic has original icon on left, McInstall title and exact supplied subtitle on right."
+  },
+  "encoding": "Remotion 4.0.537 image sequences, FFmpeg 9.0.2 libx264 CRF18 slow BT709 limited range; GIF 96-color Bayer palette",
+  "fonts": "Local Noto Sans SC / Inter / JetBrains Mono; all loaded successfully via @remotion/google-fonts and delayRender",
+  "revision": 5,
+  "theme": {
+    "background": "light white gradient #FCFDFE to #F1F4F8",
+    "primary_text": "#343B46",
+    "secondary_text": "#626D7C",
+    "fade": "to light background",
+    "original_ui_pixels_preserved": true
+  },
+  "blackdetect": {
+    "checked_entire_video": true,
+    "threshold": "pix_th=0.01,pic_th=0.999,d=0.02",
+    "intervals": [],
+    "unexpected_black_intervals": []
+  },
+  "typecheck": "tsc --noEmit passed"
+}

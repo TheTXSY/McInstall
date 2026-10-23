@@ -1,0 +1,17 @@
+{
+  "fps": 30,
+  "durationInFrames": 1590,
+  "sampleSeconds": [2, 10.5, 17.5, 23.5, 29.5, 36, 42, 46.5, 51],
+  "scenes": [
+    {"kind": "brand", "start": 0, "end": 132},
+    {"kind": "pitch", "start": 132, "end": 222},
+    {"kind": "step", "start": 222, "end": 432, "step": 0},
+    {"kind": "step", "start": 432, "end": 624, "step": 1},
+    {"kind": "step", "start": 624, "end": 804, "step": 2},
+    {"kind": "step", "start": 804, "end": 984, "step": 3},
+    {"kind": "step", "start": 984, "end": 1188, "step": 4},
+    {"kind": "step", "start": 1188, "end": 1320, "step": 5},
+    {"kind": "trust", "start": 1320, "end": 1470},
+    {"kind": "end", "start": 1470, "end": 1590}
+  ]
+}

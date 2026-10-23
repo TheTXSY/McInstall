@@ -1,0 +1,28 @@
+{
+  "name": "mcinstall-promo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.ts McInstallPromo ../docs/media/mcinstall-promo.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p",
+    "gif": "remotion render src/index.ts McInstallPromoGif ../docs/media/mcinstall-promo.gif --codec=gif",
+    "poster": "remotion still src/index.ts McInstallPromo ../docs/media/mcinstall-promo-poster.png --frame=180",
+    "brand-image": "remotion still src/index.ts McInstallBrandCard ../docs/media/mcinstall-brand-promo.png --frame=0",
+    "cover": "remotion still src/index.ts McInstallVideoCover ../docs/media/mcinstall-video-cover.png --frame=0",
+    "cover:4x3": "remotion still src/index.ts McInstallVideoCover4x3 ../docs/media/mcinstall-video-cover-4x3.png --frame=0"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.537",
+    "@remotion/google-fonts": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}
